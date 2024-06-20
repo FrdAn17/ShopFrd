@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Ferdy Studio</div>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#products">Toko</a></li>
+            <li><a href="#contact">Instagram: @frd.ayane</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search products...">
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1" checked>
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="slide first">
+                    <img src="foto1.jpg" alt="Image 1">
+                    <div class="intro-text">
+                        <h1>Welcome to Ferdy Shop</h1>
+                        <p>Discover amazing products</p>
+                        <button onclick="document.getElementById('products').scrollIntoView();">Ayo Belanja</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="openimg2.jpg" alt="Image 2">
+                    <div class="intro-text">
+                        <h1>Explore Our Collection</h1>
+                        <p>Find your perfect match</p>
+                        <button onclick="document.getElementById('products').scrollIntoView();">Harga Pass</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="foto2.jpg" alt="Image 3">
+                    <div class="intro-text">
+                        <h1>Discover New Arrivals</h1>
+                        <p>Latest trends and styles</p>
+                        <button onclick="document.getElementById('products').scrollIntoView();">Pasti Puas</button>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <!-- <label for="radio1" class="manual-btn"></label> -->
+                <!-- <label for="radio2" class="manual-btn"></label> -->
+                <!-- <label for="radio3" class="manual-btn"></label> -->
+            </div>
+        </div>
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+        </div>
+    </header>
+
+    <main>
+        <div id="products" class="product-grid">
+            <div class="product-section">
+                <h2>New Products</h2>
+                <p>Dapatkan Barang Terbaik dan Berkualitas hanya di Ferdy Studio</p>
+            </div>
+            <!-- 15 product items -->
+            <div class="product">
+                <img src="bajucewek1.jpg" alt="Product 1">
+                <h2>Full Set Outfit Kuliah</h2>
+                <p>Rp 120.000</p>
+                <button class="add-to-cart-btn" data-product="Full Set Outfit Kuliah" data-price="120000">Gas
+                    Checkout</button>
+            </div>
+            <!-- Repeat for all products -->
+            <div class="product">
+                <img src="bajucewek2.jpg" alt="Product 2">
+                <h2>Sweater Cewek</h2>
+                <p>Rp 35.000</p>
+                <button class="add-to-cart-btn" data-product="Sweater Cewek" data-price="35000">Gas Checkout</button>
+            </div>
+            <div class="product">
+                <img src="bajucewek3.jpg" alt="Product 3">
+                <h2>Sweater Cewek</h2>
+                <p>Rp 30.000</p>
+                <button class="add-to-cart-btn" data-product="Sweater Cewek" data-price="30000">Gas Checkout</button>
+            </div>
+            <div class="product">
+                <img src="sepatu1.jpg" alt="Product 4">
+                <h2>Sepatu Cakep V1</h2>
+                <p>Rp 50.000</p>
+                <button class="add-to-cart-btn" data-product="Sepatu Cakep V1" data-price="50000">Gas Checkout</button>
+            </div>
+            <div class="product">
+                <img src="kemejapria1.jpg" alt="Product 5">
+                <h2>Kemeja Pria</h2>
+                <p>Rp 70.000</p>
+                <button class="add-to-cart-btn" data-product="Kemeja Pria" data-price="70000">Gas Checkout</button>
+            </div>
+            <div class="product">
+                <img src="kemejapria2.jpg" alt="Product 6">
+                <h2>Kemeja Pria</h2>
+                <p>Rp 55.000</p>
+                <button class="add-to-cart-btn" data-product="Kemeja Pria" data-price="55000">Gas Checkout</button>
+            </div>
+            <div class="product">
+                <img src="celanapria1.jpg" alt="Product 7">
+                <h2>Celana Slim</h2>
+                <p>Rp 40.000</p>
+                <button class="add-to-cart-btn" data-product="Celana Slim" data-price="40000">Gas Checkout</button>
+            </div>
+            <div class="product">
+                <img src="celanapria2.jpg" alt="Product 8">
+                <h2>Celana Slim</h2>
+                <p>Rp 40.000</p>
+                <button class="add-to-cart-btn" data-product="Celana Slim" data-price="40000">Gas Checkout</button>
+            </div>
+            <div class="product">
+                <img src="sepatu2.jpg" alt="Product 9">
+                <h2>Sepatu Sekolah</h2>
+                <p>Rp 35.000</p>
+                <button class="add-to-cart-btn" data-product="Sepatu Sekolah" data-price="35000">Gas Checkout</button>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2>Cart</h2>
+            <table class="checkout-table">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Item Yang Ditambahkan</th>
+                        <th>Harga</th>
+                        <th>Jumlah</th>
+                        <th>Subtotal</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Cart items will be inserted here -->
+                </tbody>
+            </table>
+            <div class="total-amount">
+                Total keseluruhan: Rp <span id="total">0</span>
+            </div>
+            <button class="pay-now">Bayar Sekarang</button>
+        </div>
+    </main>
+
+    <section id="about">
+        <h2 class="about-title">About Us</h2>
+        <p class="about-content">We are a leading retailer of amazing products. Our mission is to provide quality
+            products at affordable prices.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
